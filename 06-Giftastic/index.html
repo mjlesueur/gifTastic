@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bebop Buttons + Gifs</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    </head>
+    
+
+    <body>
+        <div class="row">
+
+            <!--an empty div where the buttons will appear-->
+            <div class="col-md-8">
+                <div id="buttons">
+                </div>
+            </div>
+
+            <!--where user enters query to add a new button; option to clear gifs-->
+            <div class="col-md-4">
+
+                    <label for="new-button-input">GET MORE GIFS</label>
+                    <input type="text" id="new-button-input" value="">
+                    <hr>
+                    <button type="button" class="btn btn-primary" id="submit-btn">Submit</button>
+                    <button type="button" class="btn btn-primary" id="clear-btn">Clear</button>
+                    <hr>
+                    <label for="gif-range" class="form-label">How many gifs would you like? </label>
+                    <input type="range" class="form-range" min="0" max="20" default="10" id="gif-range">
+            </div>    
+            
+        </div>
+
+        <!--empty div where the gifs populate-->
+        <div id="gifs" class="container">
+            
+        </div>
+
+      
+            
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
+</body>
+
+</html>
